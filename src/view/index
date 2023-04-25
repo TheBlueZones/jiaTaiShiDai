@@ -1,0 +1,131 @@
+<template>
+    <div class="presentation">
+        <h1>合肥工业大学</h1>
+        <h2>电磁脉冲加工设备方案</h2>
+        <h3>普尔萨（Pulsar）科技有限公司</h3>
+        <p>2019 年 04 月</p>
+        <h4>一．普尔萨（Pulsar）科技有限公司简介</h4>
+        <p>普尔萨科技有限公司是于 2013 年初原以色列 Pulsar 相关技术、品牌、产品转移到中国而组建的集科研开发、生产销售、加工服务为一体的股份有限公司，是国内专门从事电磁制造的技术研发和装备制造的高科技企业。以色列 Pulsar 公司是全球范围内电磁脉冲焊接装备与技术研究开发的开拓者和领先者；重庆普尔萨公司拥有以色列公司具有国际领先水平的电磁脉冲加工装备的全套生产制造技术以及全部知识产权，通过技术落地与创新开发，已形成自主知识产权。公司致力于向全社会提供绿色环保、高效节能的电磁脉冲加工技术及装备，促进先进制造技术与装备的发展，全力推进先进、绿色环保制造技术市场应用。</p>
+        <h4>二、普尔萨产品系列</h4>
+        <p>普尔萨科技针对高校、科研院所教学、科研应用开发 Xtra Pulse 系列装备，包括 20KJ/9KV、50KJ/25KV、70KJ/25KV、100KJ/25KV 等各种能量等级电磁脉冲发生器，并可根据焊接、铆接、粉末成型、冲压成形等不同应用定制工作台/工作站。</p>
+        <img src="../static/img/img.png" class="img"/>
+        <p>图 1.电磁制造设备的基本配置</p>
+        <img src="../static/img/img_1.png" class="img_1"/>
+        <p>图 2.电磁制造设备样机</p>
+        <table>
+            <tr>
+                <th>项目</th>
+                <th>Xtra-Pulse 50/25</th>
+                <th>Xtra-Pulse 70/25</th>
+            </tr>
+            <tr>
+                <td>能量</td>
+                <td>50KJ</td>
+                <td>70KJ</td>
+            </tr>
+            <tr>
+                <td>电压</td>
+                <td>0-25KV</td>
+                <td>0-25KV</td>
+            </tr>
+            <tr>
+                <td>额定电流</td>
+                <td>500KA</td>
+                <td>700KA</td>
+            </tr>
+            <tr>
+                <td>峰值电流</td>
+                <td>650KA</td>
+                <td>850KA</td>
+            </tr>
+            <tr>
+                <td>短路电流</td>
+                <td>800KA</td>
+                <td>1000KA</td>
+            </tr>
+            <tr>
+                <td>容量及偏差</td>
+                <td>180uF±5%</td>
+                <td>240uF±5%</td>
+            </tr>
+            <tr>
+                <td>频率</td>
+                <td>0-45KHZ</td>
+                <td>0-45KHZ</td>
+            </tr>
+            <tr>
+                <td>尺寸</td>
+                <td>1900×1300×1900</td>
+                <td>1900×1300×1900</td>
+            </tr>
+            <tr>
+                <td>放电电流（频率）波形实时监控显示</td>
+                <td>有</td>
+                <td>有</td>
+            </tr>
+            <tr>
+                <td>工作环境</td>
+                <td>0℃-40℃</td>
+                <td>0℃-40℃</td>
+            </tr>
+        </table>
+        <p>表 1.Xtra-Pulse 基本参数</p>
+        <h4>三、设备报价</h4>
+        <p>Xtra-Pulse 50/25（含简易管管焊接工作站）：70 万元（人民币柒拾万元整，含税）</p>
+        <p>Xtra-Pulse 70/25（含简易管管焊接工作站）：85 万元（人民币捌拾伍万元整，含税）</p>
+        <h4>四、 售后服务</h4>
+        <ol>
+            <li>普尔萨为售出之设备提供为期一年的售后质量保修；</li>
+            <li>普尔萨派出技术人员到客户现场完成设备交付安装调试；</li>
+            <li>对操作、维护维修等相关技术人员进行培训；培训内容：设备的工作原理，设备的一般使用日常维护、基础维修、基础工艺、安全注意事项等；</li>
+            <li>普尔萨实现 7×24 设备故障及时响应并通过网络或电话指导即时维修，就非用户原因导致的一般性故
+                障，48 小时内维修工程师到位并尽快解决故障问题；</li>
+            <li>超出保修期的设备故障，普尔萨提供设备终身维修服务，仅收取产生的成本费用。</li>
+        </ol>
+        <h4>五、 保密条款</h4>
+        <p>未经对方的书面许可，双方不得向任何第三方透露双方从合作中获悉的对方任何商业秘密及技术秘密。未经对方的书面许可，双方不得向任何第三方透露对方提供的图纸资料，不得将该资料用于本次合作之外的其他用途；</p>
+        <h4>六、知识产权声明</h4>
+        <p>Pulsar 保证其对出售的产品拥有完全的处分权且没有侵犯任何第三人的知识产权。</p>
+    </div>
+</template>
+<script setup>
+</script>
+<style scoped lang="scss">
+.presentation {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+    font-size: 6rem; /* 添加这一行以设置字体大小 */
+  h1, h2, h3, h4 {
+    margin-bottom: 0.5rem;
+  }
+  p, li {
+    margin-bottom: 1rem;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      font-weight: bold;
+    }
+  }
+  ol {
+    padding-left: 2rem;
+  }
+}
+.img {
+    width: calc(100% * 0.5);
+    height: calc(100% * 0.5);
+
+}
+.img_1 {
+    width: calc(100% * 0.4);
+    height: calc(100% * 0.4);
+}
+
+</style>

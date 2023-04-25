@@ -1,120 +1,265 @@
 <template>
-    <div class="presentation">
-        <h1>合肥工业大学</h1>
-        <h2>电磁脉冲加工设备方案</h2>
-        <h3>普尔萨（Pulsar）科技有限公司</h3>
-        <p>2019 年 04 月</p>
-        <h4>一．普尔萨（Pulsar）科技有限公司简介</h4>
-        <p>普尔萨科技有限公司是于 2013 年初原以色列 Pulsar 相关技术、品牌、产品转移到中国而组建的集科研开发、生产销售、加工服务为一体的股份有限公司，是国内专门从事电磁制造的技术研发和装备制造的高科技企业。以色列 Pulsar 公司是全球范围内电磁脉冲焊接装备与技术研究开发的开拓者和领先者；重庆普尔萨公司拥有以色列公司具有国际领先水平的电磁脉冲加工装备的全套生产制造技术以及全部知识产权，通过技术落地与创新开发，已形成自主知识产权。公司致力于向全社会提供绿色环保、高效节能的电磁脉冲加工技术及装备，促进先进制造技术与装备的发展，全力推进先进、绿色环保制造技术市场应用。</p>
-        <h4>二、普尔萨产品系列</h4>
-        <p>普尔萨科技针对高校、科研院所教学、科研应用开发 Xtra Pulse 系列装备，包括 20KJ/9KV、50KJ/25KV、70KJ/25KV、100KJ/25KV 等各种能量等级电磁脉冲发生器，并可根据焊接、铆接、粉末成型、冲压成形等不同应用定制工作台/工作站。</p>
-        <image src="static/img/img.png"></image>
-        <p>图 1.电磁制造设备的基本配置</p>
-        <image src="static/img/img_1.png"></image>
-        <p>图 2.电磁制造设备样机</p>
-        <table>
-            <tr>
-                <th>项目</th>
-                <th>Xtra-Pulse 50/25</th>
-                <th>Xtra-Pulse 70/25</th>
-            </tr>
-            <tr>
-                <td>能量</td>
-                <td>50KJ</td>
-                <td>70KJ</td>
-            </tr>
-            <tr>
-                <td>电压</td>
-                <td>0-25KV</td>
-                <td>0-25KV</td>
-            </tr>
-            <tr>
-                <td>额定电流</td>
-                <td>500KA</td>
-                <td>700KA</td>
-            </tr>
-            <tr>
-                <td>峰值电流</td>
-                <td>650KA</td>
-                <td>850KA</td>
-            </tr>
-            <tr>
-                <td>短路电流</td>
-                <td>800KA</td>
-                <td>1000KA</td>
-            </tr>
-            <tr>
-                <td>容量及偏差</td>
-                <td>180uF±5%</td>
-                <td>240uF±5%</td>
-            </tr>
-            <tr>
-                <td>频率</td>
-                <td>0-45KHZ</td>
-                <td>0-45KHZ</td>
-            </tr>
-            <tr>
-                <td>尺寸</td>
-                <td>1900×1300×1900</td>
-                <td>1900×1300×1900</td>
-            </tr>
-            <tr>
-                <td>放电电流（频率）波形实时监控显示</td>
-                <td>有</td>
-                <td>有</td>
-            </tr>
-            <tr>
-                <td>工作环境</td>
-                <td>0℃-40℃</td>
-                <td>0℃-40℃</td>
-            </tr>
-        </table>
-        <p>表 1.Xtra-Pulse 基本参数</p>
-        <h4>三、设备报价</h4>
-        <p>Xtra-Pulse 50/25（含简易管管焊接工作站）：70 万元（人民币柒拾万元整，含税）</p>
-        <p>Xtra-Pulse 70/25（含简易管管焊接工作站）：85 万元（人民币捌拾伍万元整，含税）</p>
-        <h4>四、 售后服务</h4>
-        <ol>
-            <li>普尔萨为售出之设备提供为期一年的售后质量保修；</li>
-            <li>普尔萨派出技术人员到客户现场完成设备交付安装调试；</li>
-            <li>对操作、维护维修等相关技术人员进行培训；培训内容：设备的工作原理，设备的一般使用日常维护、基础维修、基础工艺、安全注意事项等；</li>
-            <li>普尔萨实现 7×24 设备故障及时响应并通过网络或电话指导即时维修，就非用户原因导致的一般性故
-                障，48 小时内维修工程师到位并尽快解决故障问题；</li>
-            <li>超出保修期的设备故障，普尔萨提供设备终身维修服务，仅收取产生的成本费用。</li>
-        </ol>
-        <h4>五、 保密条款</h4>
-        <p>未经对方的书面许可，双方不得向任何第三方透露双方从合作中获悉的对方任何商业秘密及技术秘密。未经对方的书面许可，双方不得向任何第三方透露对方提供的图纸资料，不得将该资料用于本次合作之外的其他用途；</p>
-        <h4>六、知识产权声明</h4>
-        <p>Pulsar 保证其对出售的产品拥有完全的处分权且没有侵犯任何第三人的知识产权。</p>
+    <div class="common-layout">
+        <el-menu
+            :default-active="activeIndex"
+            class="el-menu-demo"
+            mode="horizontal"
+            :ellipsis="false"
+            background-color="#FFF"
+            text-color="#000"
+            active-text-color="#"
+            @select="handleSelect"
+        >
+            <el-menu-item index="0">
+                <el-image style="width: 40px; height: 40px" src="../public/logo.png" fit="fit"/>
+                <el-text class="mx-1">嘉钛时代</el-text>
+            </el-menu-item>
+            <div class="flex-grow"/>
+            <el-menu-item index="1">产品介绍</el-menu-item>
+            <el-menu-item index="1">团队介绍</el-menu-item>
+            <el-menu-item index="1">专利展示</el-menu-item>
+            <el-menu-item index="1">联系我们</el-menu-item>
+        </el-menu>
+
+        <div class="banner-container">
+            <img src="../static/img/banner.png" class="banner">
+        </div>
+        <div class="container">
+
+        </div>
+        <div class="product-intro-container">
+            <h2 class="product-intro-title">产品介绍</h2>
+            <div class="product-row" v-for="(row, rowIndex) in productItems" :key="'row-' + rowIndex">
+                <div class="product-item" v-for="(item, itemIndex) in row" :key="'item-' + itemIndex">
+                    <div class="product-image">
+                        <img :src="item.image" class="product-image-inner">
+                    </div>
+                    <p class="product-text">{{ item.text }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-intro-container">
+            <h2 class="team-intro-title">研究团队</h2>
+            <p class="team-intro-text">
+                现有享受国务院特殊津贴专家1名，斛兵学者1名，“新世纪优秀人才支持计划”专家1名，二级教授3名，副教授3名，讲师7名，博士后2名，高级工程师2名，博士生12名，硕士生47名。中心中青年骨干教师均来自 “双一流”高校华中科技大学、哈工大、西工大以及国外知名高校，承担国家自然科学基金14项，主持或参与国家重点研发计划、装备预研项目、基础加强计划项目等国家级/省部级重要课题40余项，研究成果发表于成形制造领域顶级期刊IJP、JMPT、IJRM&HM、MSEA、JNM、JAC等国内外重要期刊。
+            </p>
+            <div class="team-photo-row" v-for="(row, rowIndex) in teamPhotos" :key="'row-' + rowIndex">
+                <div class="team-photo-item" v-for="(photo, photoIndex) in row" :key="'photo-' + photoIndex">
+                    <div class="team-photo-image">
+                        <img :src="photo.image" class="team-photo-image-inner">
+                    </div>
+                    <p class="team-photo-text">{{ photo.text }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-patent-container">
+            <h2 class="team-patent-title">专利展示</h2>
+            <div class="demo-image__preview">
+                <el-image
+                    style="width: 100px; height: 100px"
+                    :src="url"
+                    :zoom-rate="1.2"
+                    :preview-src-list="srcList"
+                    :initial-index="4"
+                    fit="cover"
+                />
+            </div>
+        </div>
     </div>
 </template>
 <script setup>
+import {ref} from 'vue'
+
+const activeIndex = ref('1')
+const handleSelect = (string, keyPath) => {
+    console.log(key, keyPath)
+}
+
+
+const productItems = [
+    [
+        { image: '../static/img/introduce/img_1.png', text: '网格筋壁板电辅助渐进压弯平台' },
+        { image: '../static/img/introduce/img_2.png', text: '板料电辅助拉深平台' },
+        { image: '../static/img/introduce/img_3.png', text: '盘类件高能温热压扭成形系统' },
+    ],
+    [
+        { image: '../static/img/introduce/img_4.png', text: '副车架内高压成形模具系统' },
+        { image: '../static/img/introduce/img_5.png', text: 'DYH630超精密等温超塑成形液压机' },
+        { image: '../static/img/introduce/img_6.png', text: '多源复合超声半固态制浆设备' },
+    ]
+]
+
+const teamPhotos = [
+    [
+        { image: '../static/img/introduce/img_7.png', text: '建国69周年中心成员接受爱国主义教育' },
+        { image: '../static/img/introduce/img_8.png', text: '中心成员于材料成形实验室合影' },
+        { image: '../static/img/introduce/img_9.png', text: '省数字化精密铸造制造业创新中心启动仪式' },
+    ]
+]
+
+const url =
+    'https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg'
+const srcList = [
+    'https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg',
+    'https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg',
+    'https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg',
+    'https://fuss10.elemecdn.com/9/bb/e27858e973f5d7d3904835f46abbdjpeg.jpeg',
+    'https://fuss10.elemecdn.com/d/e6/c4d93a3805b3ce3f323f7974e6f78jpeg.jpeg',
+    'https://fuss10.elemecdn.com/3/28/bbf893f792f03a54408b3b7a7ebf0jpeg.jpeg',
+    'https://fuss10.elemecdn.com/2/11/6535bcfb26e4c79b48ddde44f4b6fjpeg.jpeg',
+]
 </script>
-<style scoped lang="scss">
-.presentation {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  h1, h2, h3, h4 {
-    margin-bottom: 0.5rem;
-  }
-  p, li {
-    margin-bottom: 1rem;
-  }
-  table {
-    border-collapse: collapse;
+
+<style lang="scss" scoped>
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.mx-1{
+    margin-left: 20px;
+    font-size: 20px; /* Increase the font size by 5px */
+    font-weight: bold; /* Make the text bold */
+}
+.banner-container {
     width: 100%;
-    margin-bottom: 1rem;
-    th, td {
-      border: 1px solid #ccc;
-      padding: 0.5rem;
-      text-align: left;
-    }
-    th {
-      font-weight: bold;
-    }
-  }
-  ol {
-    padding-left: 2rem;
-  }
+    overflow: hidden;
+}
+.banner{
+    width: 100%;
+    display: block;
+}
+.el-menu-demo {
+    padding: 0 300px;
+}
+
+.el-menu-item {
+    font-size: 20px; /* Increase the font size by 5px */
+    font-weight: bold; /* Make the text bold */
+}
+
+.product-intro-container {
+    padding: 20px 300px;
+    margin-top: 100px;
+}
+
+.product-intro-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    width: calc(100% / 3 - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.product-image {
+    width: 80%;
+    height: 0;
+    padding-bottom: 49.4%; // 计算方式: (1 / 1.618) * 100
+    display: block;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,.4);
+    position: relative; // 新增
+}
+
+.product-text {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.team-intro-container {
+    padding: 20px 300px;
+    margin-top: 100px;
+}
+
+.team-intro-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.team-intro-text {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 29px;
+}
+
+.team-photo-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.team-photo-item {
+    width: calc(100% / 3 - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-photo-image {
+    width: 80%;
+    height: 0;
+    padding-bottom: 49.4%; // 计算方式: (1 / 1.618) * 100
+    display: block;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,.4);
+    position: relative; // 新增
+}
+.team-photo-text {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: blue;
+    font-weight: bold;
+}
+.product-image-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-photo-image-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.demo-image__error .image-slot {
+    font-size: 30px;
+}
+.demo-image__error .image-slot .el-icon {
+    font-size: 30px;
+}
+.demo-image__error .el-image {
+    width: 100%;
+    height: 200px;
 }
 </style>
