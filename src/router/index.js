@@ -7,12 +7,12 @@ import UserFeedback from '../view/UserFeedback.vue'
 
 const routes = [
     {
-        path: '/',
+        path: '/social-responsibility',
         name: 'index',
         component: Home
     },
     {
-        path: '/social-responsibility',
+        path: '/',
         name: 'SocialResponsibility',
         component: SocialResponsibility,
     },
@@ -27,7 +27,7 @@ const routes = [
         component: UserFeedback,
     },
 ]
-
+//
 const router = createRouter({
     history: createWebHistory(),
     routes
