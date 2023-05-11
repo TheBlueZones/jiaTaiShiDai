@@ -7,17 +7,17 @@ import UserFeedback from '../view/UserFeedback.vue'
 
 const routes = [
     {
-        path: '/social-responsibility',
+        path: '/market-positioning',
         name: 'index',
         component: Home
     },
     {
-        path: '/',
+        path: '/social-responsibility',
         name: 'SocialResponsibility',
         component: SocialResponsibility,
     },
     {
-        path: '/market-positioning',
+        path: '/',
         name: 'MarketPositioning',
         component: MarketPositioning,
     },
